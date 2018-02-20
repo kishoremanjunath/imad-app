@@ -25,8 +25,6 @@ button.onclick = function () {
 };
 
 // SUbmit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     
@@ -47,16 +45,15 @@ submit.onclick = function () {
                 }
                 var ul = document.getElementById('namelist');
                 ul.innerHTML = list;
-                
+            }    
         }
         // Not done yet
     };
     
     // Make the request
+    var nameInput = document.getElementById('name');
+    var name = nameInput.value;
     request.open('GET', 'http://kishorefait.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
-};
-    // Make a request to the server and send the name
-    
     
 };
