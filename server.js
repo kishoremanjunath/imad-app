@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articelOne = {
+var articleOne = {
     title: 'Article One | Kishore Manjunath',
     heading: 'Article one',
     date: 'Feb 20 2018',
